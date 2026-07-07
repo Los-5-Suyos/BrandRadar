@@ -296,6 +296,72 @@
 .pricing-check::after { content: '✓'; color: #fff; font-size: 0.55rem; font-weight: 700; }
 .pricing-card .btn { width: 100%; justify-content: center; }
 
+
+/* ============================================================
+    ENTERPRISE
+   ============================================================ */
+#enterprise {
+    padding: 100px 5%;
+    background: #fff;
+}
+.enterprise__inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.enterprise__card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    padding: 56px 48px;
+    text-align: center;
+    background: linear-gradient(160deg, #faf8ff 0%, #f3edff 100%);
+    border: 1.5px solid rgba(124,58,237,.18);
+    box-shadow: 0 20px 60px rgba(124,58,237,.1);
+}
+.enterprise__card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4254F7, #B430D3);
+}
+.enterprise__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.enterprise__title {
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--br-text);
+}
+.enterprise__subtitle {
+    font-size: 1.02rem;
+    color: var(--br-muted);
+    max-width: 560px;
+    line-height: 1.7;
+}
+.enterprise__features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 28px;
+    margin: 8px 0 12px;
+    padding: 0;
+    list-style: none;
+}
+.enterprise__features li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--br-text);
+}
+
+
 /* ============================================================
     CTA FINAL
    ============================================================ */
